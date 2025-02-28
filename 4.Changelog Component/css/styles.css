@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    max-width: 70rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5rem;
+}
+
+.header__titulo {
+    font-size: 4rem;
+}
+
+.header__description {
+    color: gray;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.register {
+    display: grid;
+    grid-template-columns: 7fr .1fr 10fr;    
+}
+
+.date, .description {
+    padding: 1.3rem 0rem;
+}
+
+.date {
+    border-right: 2px solid black;
+    margin-right: -.8rem;
+    justify-self: end;
+    padding-right: 5rem;
+    color: gray;
+}
+
+.description {
+    justify-self: start;
+    padding-left: 1rem;
+}
+
+.point {
+    margin: 1.6rem 0;
+}
+
+.inicio, .fin {
+    margin-right: -.3rem;
+}
+
+.point {
+    border-radius: 100%;
+    background-color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.bton {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 1.5rem;
+}

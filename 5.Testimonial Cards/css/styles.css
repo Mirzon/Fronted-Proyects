@@ -1,0 +1,167 @@
+:root {
+    --blanco: #ffffff;
+    --gris: gray;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+} 
+
+p {
+    font-size: 2rem;
+}
+
+img {
+    width: 100%;
+}
+.br-20 {
+    border-radius: 2rem;
+}
+
+.pd-20 {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    width: 95%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border: 4px solid var(--gris);
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.burbuja {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.burbuja p:first-child {
+    padding-bottom: 2rem;
+}
+
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-top: 1.5rem solid var(--negro);
+    margin-left: 3.6rem;
+    margin-bottom: .5rem;
+}
+
+.perfil {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.perfil__imagen{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.card1__user2 {
+    border: 2px solid var(--negro);
+}
+
+.coment {
+    margin-bottom: 3rem;
+}
+
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 3rem;
+}
+
+.card2__imagen {
+    width: 33rem;
+    overflow: hidden;
+}
+
+.card2__imagen img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.estrellas {
+    color: yellow;
+    font-size: 3.5rem;
+}
+
+.card2__datos {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.card2__datos p:first-of-type {
+    color: var(--gris);
+    margin: 2rem 0;
+}
+
+.card3 {
+    border: 2px solid var(--negro);
+    margin: 0 2rem 2rem 2rem;
+    text-align: center; 
+}
+
+.card3 p {
+    width: 65rem;
+    margin: 0 auto;
+}
+
+.card3__perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.anterior, .siguiente {
+    font-size: 3rem;
+}
+
+/* .anterior::before {
+    content: '<';
+    font-size: 3rem;
+} */
+
+.perfil__imagen--transparent {
+    width: 7rem;
+    height: 7rem;
+    opacity: .5;
+}
+
+.card3__perfiles .perfil__imagen:nth-child(3) img {
+    height: 100%;
+    object-fit: cover;
+}

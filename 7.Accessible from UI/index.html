@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible form UI</title>
+    <link rel="stylesheet" href="/7.Accessible from UI/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/7.Accessible from UI/css/styles.css">
+</head>
+<body>
+    <main class="container">
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre y Apellido completo:</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="nombre">E-mail:</label>
+                <input class="campo__field" type="email" placeholder="correo@correo.com" id="email">
+                <p class="error">Email is already taken</p>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="nombre">Contraseña:</label>
+                <input class="campo__field" type="password" placeholder="xxxxxxxxx" id="contraseña">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path> <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path> </svg> 
+                </div>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="nombre">Confirma Contraseña:</label>
+                <input class="campo__field" type="password" placeholder="xxxxxxxxx" id="confirma__contraseña">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path> <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"></path> </svg> 
+                </div>
+            </div>
+            <div class="campo">
+                <input class="boton" type="submit" value="Enviar" id="btn">
+            </div>
+        </form>
+
+        <section class="section">
+            <div class="grafico">
+                <span>65%</span>
+            </div>
+            <p class="titulo">Profile completeness</p>
+            <div class="requisitos">
+                <p class="subrayar">Create Account</p>
+                <p class="subrayar">Update Roadmap Progress</p>
+                <p class="subrayar">Setup Public Profile</p>
+                <p>Complete your first projects</p>
+                <p>invite your Friends</p>
+                <br>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

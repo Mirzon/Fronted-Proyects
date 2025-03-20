@@ -1,0 +1,94 @@
+:root {
+    --negro: #0A0A0A;
+    --naranja: #ED624E;
+    --celeste: #95B8A4;
+    --gris: #E1E1DA;
+    --blanco: #FEFEFE;
+    --fuentePrincipal: "Lato", sans-serif;
+    --fuenteSecund:"Playwrite HU", cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--gris);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fuente);
+}
+
+.container {
+    max-width: 60rem;
+    width: 95%;
+}
+
+.navegation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid var(--celeste);
+    border-radius: 2rem;
+    height: 20rem;
+    position: relative;
+}
+
+.emergente {
+    visibility: hidden;
+    opacity: 0;
+    font-family: var(--fuenteSecund);
+    position: absolute;
+    background-color: var(--negro);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: var(--blanco);
+    font-size: 1.7rem;
+    top: 5%;
+}
+
+.emergente::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    border-width: 1rem 1rem 1rem 1rem;
+    border-style: solid;
+    border-color:var(--negro) transparent transparent transparent;
+}
+
+.emergente-home {
+    left: -10%;
+}
+
+.emergente-projects {
+    left: 25%;
+}
+
+.emergente-blog {
+    right: -12.5%;
+}
+
+.enlace {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--naranja);
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.enlace:hover {
+    background-color: var(--blanco);
+}
+
+.enlace:hover ~ .emergente {
+    visibility: visible;
+    opacity: 1;
+}

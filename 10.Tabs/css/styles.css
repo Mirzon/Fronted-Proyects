@@ -1,0 +1,60 @@
+:root {
+    --fuente: "Playwrite HU", cursive;
+    --colorPrimario: #023059;
+    --colorSecund: #03658C;
+    --blanco: #FFFFFF;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuente);
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 3rem auto 0rem auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlace {
+    text-decoration: none;
+    background-color: var(--colorPrimario);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+
+.pestaña {
+    text-align: center;
+    display: none;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: var(--colorSecund);
+}
+
+img {
+    border-radius: 2rem;
+}
+
+.enlace.active {
+    background-color: var(--colorSecund);
+}
+
+.pestaña.active {
+    display: block;
+}
